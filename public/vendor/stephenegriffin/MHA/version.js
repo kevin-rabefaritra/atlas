@@ -1,0 +1,1 @@
+/* exported mhaVersion */ window.mhaVersion = function () { return "b1330f4f"; };

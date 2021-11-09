@@ -11,12 +11,13 @@
     <title>.atlas - @yield('title')</title>
 
     <!-- Custom fonts for this template-->
+    @yield('pre-css')
     <link href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
-
+    @yield('post-css')
 </head>
 
 <body id="page-top">
@@ -124,6 +125,7 @@
                 <h1 class="h3 mb-4 text-gray-800">@yield('title')</h1>
 
                 @yield('content')
+                <div class="row mb-4"></div>
 
             </div>
             <!-- /.container-fluid -->
@@ -172,6 +174,7 @@
 </div>
 
 <!-- Bootstrap core JavaScript-->
+@yield('pre-js')
 <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
 <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
@@ -180,6 +183,7 @@
 
 <!-- Custom scripts for all pages-->
 <script src="{{ asset('js/sb-admin-2.min.js') }}"></script>
+@yield('post-js')
 
 </body>
 
